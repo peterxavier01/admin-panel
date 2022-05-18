@@ -26,7 +26,7 @@ function App() {
       <Navbar />
       <div className="sidebar-container">
         <div className="sidebar">
-          <Sidebar logout={() => setUser(false)}/>
+          <Sidebar logout={() =>  <Navigate to="/login" /> && setUser(false)}/>
 
         </div>
         <Routes>
