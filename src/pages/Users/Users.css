@@ -1,0 +1,51 @@
+.users {
+    flex: 4;
+    margin: 1em;
+}
+
+.users table {
+    border-collapse: collapse;
+    width: 90%;
+    border: 1px solid hsl(0, 0%, 73%);
+    margin-left: 3em;
+}
+
+.users th, 
+.users td {
+    border-bottom: 1px solid hsl(0, 0%, 73%);
+    color: hsl(0, 0%, 23%);
+    padding: 1em;
+}
+
+.users th {
+    text-align: left;
+}
+
+.users th {
+    background-color: var(--tertiary-clr);
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.users tr:hover {
+    background-color: var(--primary-clr);
+}
+
+.users tr:nth-child(even) {
+    background-color: hsl(0, 0%, 93%);
+}
+
+.users .image-data {
+    display: flex;
+    border: none;
+    align-items: center;
+}
+
+.users img {
+    width: 40px;
+    height: 40px;
+    margin-right: .5em;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -1,0 +1,69 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    --primary-clr: hsl(240, 100%, 94%);
+    background-color: var(--primary-clr);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    right: 0;
+    left: 0;
+}
+
+.nav-left .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 1.2rem;
+    padding-left: 1em;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    padding-right: 1em;
+}
+
+.badge-container {
+    position: relative;
+}
+
+.badge {
+    background-color: var(--red);
+    width: 16px;
+    cursor: pointer;
+    height: 16px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -3px;
+    top: -5px;
+    color: var(--white);
+    font-size: 10px;
+}
+
+.nav-right i {
+    margin-left: 1em;
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin: 0 1em;
+    cursor: pointer;
+    border-radius: 50%;
+}

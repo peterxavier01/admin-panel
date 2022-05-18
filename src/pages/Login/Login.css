@@ -1,0 +1,73 @@
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #279af1, #23B5D3);
+  width: 100vw;
+  flex: 4;
+  min-height: 100vh;
+}
+
+#form {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  width: 400px;
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.form-title {
+  color: var(--gray);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+label {
+  font-weight: 600;
+  color: var(--gray);
+  margin-bottom: 0.3em;
+}
+
+.email,
+.password {
+  outline: none;
+  padding: 1em;
+  margin-bottom: 1em;
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+.submit {
+  background: linear-gradient(to right, #279af1, #23B5D3);
+  border: 2px solid;
+  border-radius: 6px;
+  padding: 1em;
+  outline: none;
+  color: var(--white);
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.submit:hover {
+  background: var(--white);
+  color: #279af1;
+  border: 2px solid #279af1;
+  transition: 0.3s ease-out;
+}
+
+.success {
+  margin-top: 1em;
+  color: var(--green);
+  font-size: 0.6rem;
+}
+
+.error {
+  font-size: 0.6rem;
+  font-weight: 300;
+  color: var(--red);
+  margin-top: 1em;
+}
