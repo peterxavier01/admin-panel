@@ -1,3 +1,42 @@
 .products {
     flex: 4;
+    margin: 1em;
+}
+
+.card-container {
+    display: grid;
+    row-gap: 4em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    width: 18rem;
+    border-radius: 10px;
+    --gray: hsl(0, 0%, 63%);
+    border: 1px solid var(--gray);
+}
+
+.product-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 17.9rem;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: .8em;
+}
+
+.card-title, .card-text {
+    color: hsl(0, 0%, 43%);
+}
+
+.card-title {
+    margin-bottom: .5em;
+}
+
+.card-text {
+    padding: .3em 0;
+    font-size: 15px;
 }

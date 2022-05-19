@@ -3,7 +3,7 @@ import {
   Dashboard,
   PersonAdd,
   People,
-  Settings,
+  // Settings,
   LocalMall
 } from "@material-ui/icons";
 import { NavLink as Link } from "react-router-dom";
@@ -17,7 +17,6 @@ const Sidebar = ({ logout }) => {
         <ul>
           <div className="side-flex">
             <div className="side-up">
-              <span className="side-title">Dashboard</span>
               <li>
                 <Link to="/dashboard" activeclassname="active">
                   <i>{<Dashboard />}</i>
@@ -44,12 +43,12 @@ const Sidebar = ({ logout }) => {
               </li>
             </div>
             <div className="side-down">
-              <li>
+              {/* <li>
                 <a href="/" activeclassname="active">
                   <i>{<Settings />}</i>
                   <p>Settings</p>
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="/logout" className="logout" onClick={logout}>
                   <i>{<ExitToApp />}</i>

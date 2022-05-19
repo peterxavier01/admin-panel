@@ -56,15 +56,5 @@ nav ul li:last-of-type {
   flex-direction: column;
   justify-content: space-between;
   height: calc(100vh - 60px);
-}
-
-.side-title {
-  margin-left: .5em;
-  font-weight: 300;
-  --gray: hsl(0, 0%, 63%);
-  color: var(--gray);
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: .9rem;
+  padding-top: 1em;
 }
