@@ -33,6 +33,10 @@
     padding-right: 1em;
 }
 
+.menu {
+    display: none;
+}
+
 .badge-container {
     position: relative;
 }
@@ -66,4 +70,17 @@
     margin: 0 1em;
     cursor: pointer;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: block;
+        color: var(--gray);
+        margin-left: 1em;
+    }
+
+    .nav-left {
+        display: flex;
+        align-items: center;
+    }
 }

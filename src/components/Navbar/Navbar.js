@@ -1,13 +1,22 @@
-import { Notifications, Person } from "@material-ui/icons";
+import { Notifications, Person, Menu } from "@material-ui/icons";
 import "./Navbar.css";
 import Profile from "../../assets/profile.jpg";
 import Logo from "../../assets/logo.png";
 
 const Navbar = () => {
+  function openNav() {
+    let sidenav =  document.getElementById("sidenav");
+    if (sidenav) {
+      sidenav.style.width = "250px";
+      sidenav.style.display = "block";
+    }
+  }
+  
   return (
     <div className="navbar">
       <div className="nav-left">
-        <a href="/" className="logo">
+      <span className="menu" onClick={() => openNav()}>{<Menu />}</span>
+        <a href="/dashboard" className="logo">
           <img src={Logo} alt="logo"></img>
           <p>riderx-admin</p>
         </a>

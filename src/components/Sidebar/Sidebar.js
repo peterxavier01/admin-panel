@@ -3,13 +3,22 @@ import {
   Dashboard,
   PersonAdd,
   People,
+  Close,
   // Settings,
-  LocalMall
+  LocalMall,
 } from "@material-ui/icons";
 import { NavLink as Link } from "react-router-dom";
 import "./Sidebar.css";
 
+
 const Sidebar = ({ logout }) => {
+  function closeNav() {
+    let sidenav = document.getElementById("sidenav");
+    if (sidenav) {
+      sidenav.style.width = "0";
+      sidenav.style.display = "none";
+    }
+  }
 
   return (
     <div className="sidebar">
@@ -17,7 +26,8 @@ const Sidebar = ({ logout }) => {
         <ul>
           <div className="side-flex">
             <div className="side-up">
-              <li>
+            <a href className="closebtn" onClick={() => closeNav()}>{<Close />}</a>
+              <li className="dashboard">
                 <Link to="/dashboard" activeclassname="active">
                   <i>{<Dashboard />}</i>
                   <p>Dashboard</p>

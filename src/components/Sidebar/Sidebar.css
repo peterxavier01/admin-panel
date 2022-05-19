@@ -58,3 +58,37 @@ nav ul li:last-of-type {
   height: calc(100vh - 60px);
   padding-top: 1em;
 }
+
+.closebtn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #sidenav {
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #555;
+    overflow-x: hidden;
+    transition: 0.5s !important;
+  }
+
+  .dashboard {
+    margin-top: 2.5em;
+  }
+  
+  .closebtn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px !important;
+  }
+
+  nav ul li {
+    transition: 0.3s !important;
+  } 
+}

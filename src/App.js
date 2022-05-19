@@ -25,9 +25,8 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="sidebar-container">
-        <div className="sidebar">
-          <Sidebar logout={() => setUser(false)}/>
-
+        <div className="sidebar" id="sidenav">
+          <Sidebar logout={() => setUser(false)} />
         </div>
         <Routes>
           {!user && (

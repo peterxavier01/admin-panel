@@ -55,10 +55,12 @@
   font-size: 15px !important;
 }
 
-.arrow-down {
+.arrow-down,
+.negative {
   color: var(--red) !important;
 }
 
-.arrow-up {
+.arrow-up,
+.positive {
   color: var(--green);
 }

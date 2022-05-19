@@ -10,7 +10,7 @@ const InfoBox = () => {
         <div className="amount-container">
           <span className="amount">$2044</span>
           <span className="trend">
-            <p className="trend-value">-5.3</p>
+            <p className="trend-value negative">-5.3</p>
             <ArrowDownward className="arrow-down" />
           </span>
         </div>
@@ -22,7 +22,7 @@ const InfoBox = () => {
         <div className="amount-container">
           <span className="amount">$3022</span>
           <span className="trend">
-            <p className="trend-value">-2.7</p>
+            <p className="trend-value negative">-2.7</p>
             <ArrowDownward className="arrow-down" />
           </span>
         </div>
@@ -34,7 +34,7 @@ const InfoBox = () => {
         <div className="amount-container">
           <span className="amount">$2044</span>
           <span className="trend">
-            <p className="trend-value">+1.3</p>
+            <p className="trend-value positive">+1.3</p>
             <ArrowUpward className="arrow-up" />
           </span>
         </div>
