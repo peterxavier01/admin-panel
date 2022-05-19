@@ -27,7 +27,7 @@ const Users = () => {
     fetchData();
   }, []);
 
-  if (loading) <h1>LOADING...</h1>;
+  if (loading) return <h1 className="loading">Fetching clients' list...</h1>;
 
   if (error) console.log(error);
 
@@ -50,7 +50,7 @@ const Users = () => {
           <tr>
             <td className="image-data">
               <img src={detailValues[0]?.image} alt="team"></img>
-              {detailValues[0]?.firstname} {detailValues[0]?.lastname}
+              <span>{detailValues[0]?.firstname} {detailValues[0]?.lastname}</span>
             </td>
             <td>{detailValues[0]?.email}</td>
             <td>{detailValues[0]?.phone}</td>
