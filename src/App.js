@@ -13,12 +13,12 @@ function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const userToken = localStorage.getItem("user");
+    const userToken = sessionStorage.getItem("user");
     userToken && JSON.parse(userToken) ? setUser(true) : setUser(false);
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("user", user);
+    sessionStorage.setItem("user", user);
   }, [user]);
 
   return (

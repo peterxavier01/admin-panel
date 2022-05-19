@@ -36,7 +36,7 @@ const Team = () => {
       <table>
         <thead>
           <tr>
-            <th>Full Name</th>
+            <th>Member Name</th>
             <th>Email</th>
             <th>Phone No.</th>
             <th>Gender</th>
