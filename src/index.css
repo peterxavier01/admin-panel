@@ -1,19 +1,26 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  /* margin-right: 1em; */
+  /* padding-right: 1em; */
 }
 
+/* @media screen and (max-width: 1023px) {
+  .App {
+    /* padding-right: 1em; */
+    /* margin-right: 1em; */
+    
 :root {
-    --gray: #555;
-    --white: #fff;
-    --primary-clr: #F7F7FF;
-    --red: #eb123a;
-    --blue: #23B5D3;
-    --green: rgb(59, 223, 59);
-    --tertiary-clr: hsl(190, 72%, 78%);
+  --gray: #555;
+  --white: #fff;
+  --primary-clr: #f7f7ff;
+  --red: #eb123a;
+  --blue: #23b5d3;
+  --green: rgb(59, 223, 59);
+  --tertiary-clr: hsl(190, 72%, 78%);
 }

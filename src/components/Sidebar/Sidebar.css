@@ -63,19 +63,24 @@ nav ul li:last-of-type {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   #sidenav {
     position: fixed;
     width: 0%;
-    height: 100%;
-    z-index: 1;
-    top: 0;
+    height: calc(100vh + 60px);
+    z-index: 200;
+    top: -60px;
     left: 0;
-    background-color: #555;
+    background-color: var(--primary-clr);
     overflow-x: hidden;
     transition: 0.5s !important;
   }
 
+  .side-flex {
+    height: calc(100vh + 25px);
+    padding-top: 1em;
+  }
+  
   .dashboard {
     margin-top: 2.5em;
   }
