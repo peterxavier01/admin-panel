@@ -67,7 +67,7 @@ nav ul li:last-of-type {
   #sidenav {
     position: fixed;
     width: 0%;
-    height: calc(100vh + 60px);
+    height: calc(100vh + 1000px);
     z-index: 200;
     top: -60px;
     left: 0;
@@ -77,7 +77,7 @@ nav ul li:last-of-type {
   }
 
   .side-flex {
-    height: calc(100vh + 25px);
+    height: calc(100vh + 120px);
     padding-top: 1em;
   }
   
