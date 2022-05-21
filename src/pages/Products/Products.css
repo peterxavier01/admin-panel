@@ -70,15 +70,14 @@
     .card-container {
         grid-template-columns: repeat(1, minmax(200px, 1fr));
         row-gap: 2em;
-        outline: 1px solid red;
     }
     
     .card {
-        width: 18rem;
+        width: 21rem;
     }
     
     .product-img {
-        width: 17.9rem;
+        width: 20.9rem;
         height: 10rem;
     }
 }
