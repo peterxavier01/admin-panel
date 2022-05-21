@@ -13,7 +13,7 @@ const Chart = ({ title, data, dataKey, grid }) => {
   return (
     <div className="chart">
       <h3 className="chart-title">{title}</h3>
-      <ResponsiveContainer width="100%" aspect={4 / 1}>
+      <ResponsiveContainer className="chart-container" aspect={3.5/1}>
         <LineChart data={data}>
           <XAxis dataKey="name" stroke="var(--blue)" strokeDasharray="10 10"/>
           <YAxis dataKey={dataKey} stroke="var(--blue)" strokeDasharray="10 10" />

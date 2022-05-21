@@ -66,12 +66,35 @@
 }
 
 @media screen and (max-width: 1023px) {
- .info-container {
-   width: 100%;
-   padding-right: 0em;
- } 
+  .info-container {
+    width: 100%;
+    padding-right: 0em;
+  }
 
- .info-box {
-   flex: 4;
- }
+  .info-box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+  }
+
+  .info-box {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info-box:nth-child(1),
+  .info-box:nth-child(2) {
+    margin-right: auto;
+  }
+
+  .info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+  }
 }
