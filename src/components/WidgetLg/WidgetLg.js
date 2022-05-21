@@ -45,7 +45,7 @@ const WidgetLg = () => {
     },
     {
       src: src,
-      name: "Danny Whizz-Bang",
+      name: "Polly Gray",
       date: "May 9, 2022",
       amount: "$9323.89",
       status: "Declined",

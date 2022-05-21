@@ -1,6 +1,8 @@
 .products {
     flex: 4;
-    margin: 1em;
+    margin: 1em 0;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .card-container {
@@ -39,4 +41,34 @@
 .card-text {
     padding: .3em 0;
     font-size: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .products {
+       max-width: 100%;
+       outline: 1px solid red;
+    }
+
+    .card-container {
+        outline: 1px solid red;
+        grid-template-columns: auto-fit auto-fit;
+        justify-content: end;
+        row-gap: 2em;
+        margin: 0 auto;
+    }
+    
+    .card {
+        outline: 1px solid red;
+        width: 11rem;
+    }
+    
+    .product-img {
+        width: 10.9rem;
+        height: 8rem;
+    }
+    
+    .card-text {
+        padding: .3em 0;
+        font-size: .9rem;
+    }
 }

@@ -84,7 +84,7 @@ nav ul li:last-of-type {
     cursor: pointer;
     display: block;
     position: absolute;
-    top: -50px;
+    top: 0px;
     right: 15px;
     font-size: 36px !important;
   }

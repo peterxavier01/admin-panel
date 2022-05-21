@@ -47,14 +47,14 @@
 .name {
   --gray: hsl(0, 0%, 10%);
   color: var(--gray);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
 .position {
   color: var(--gray);
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .display-block {
