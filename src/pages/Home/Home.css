@@ -5,6 +5,7 @@
 
 @media screen and (max-width: 1023px) {
   .Home {
+    outline: 1px solid red;
     padding-right: 1em;
   }
 }

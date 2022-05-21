@@ -14,7 +14,7 @@
 .customers {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     width: 100%;
-    border-spacing: 3px;
+    border-spacing: 10px;
     margin-bottom: 1em;
 }
 
@@ -24,6 +24,10 @@
     --gray: hsl(0, 0%, 10%);
     color: var(--gray);
     padding-bottom: .5em;
+}
+
+.customers tr {
+    padding-bottom: 3em;
 }
 
 .widget-lg-btn {
@@ -74,4 +78,21 @@
     .widget-block {
         flex-direction: column;
     }
+
+    .widget-lg {
+        outline: 1px solid red;
+    }
+
+    .customers th {
+        font-size: 1rem;
+    }
+    
+    .widget-lg-name {
+        font-size: .7rem;
+    }
+    
+    .widget-lg-date,
+    .widget-lg-amount {
+        font-size: 0.7rem;
+    }    
 }

@@ -5,7 +5,7 @@ const WidgetLg = () => {
   const transactions = [
     {
       src: src,
-      name: "Francis Xavier",
+      name: "Tommy Shelby",
       date: "May 4, 2022",
       amount: "$10300.89",
       status: "Approved",
@@ -13,7 +13,7 @@ const WidgetLg = () => {
     },
     {
       src: src,
-      name: "Francis Xavier",
+      name: "John Shelby",
       date: "May 5, 2022",
       amount: "$133.89",
       status: "Approved",
@@ -21,7 +21,7 @@ const WidgetLg = () => {
     },
     {
       src: src,
-      name: "Francis Xavier",
+      name: "Arthur Shelby",
       date: "May 6, 2022",
       amount: "$203.89",
       status: " Declined",
@@ -29,7 +29,7 @@ const WidgetLg = () => {
     },
     {
       src: src,
-      name: "Francis Xavier",
+      name: "Ada Shelby",
       date: "May 7, 2022",
       amount: "$503.89",
       status: "Pending",
@@ -37,7 +37,7 @@ const WidgetLg = () => {
     },
     {
       src: src,
-      name: "Francis Xavier",
+      name: "Freddie Thorne",
       date: "May 8, 2022",
       amount: "$453.89",
       status: "Pending",
@@ -45,7 +45,7 @@ const WidgetLg = () => {
     },
     {
       src: src,
-      name: "Francis Xavier",
+      name: "Danny Whizz-Bang",
       date: "May 9, 2022",
       amount: "$9323.89",
       status: "Declined",
@@ -60,8 +60,7 @@ const WidgetLg = () => {
   return (
     <div className="widget-lg">
       <h3 className="widget-title">Customer Transactions</h3>
-      {transactions.map((transaction) => (
-        <table key={transaction.id} className="customers">
+        <table className="customers">
           <thead>
             <tr>
               <th>Customer</th>
@@ -71,7 +70,8 @@ const WidgetLg = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
+          {transactions.map((transaction) => (
+            <tr key={transaction.id}>
               <td className="widget-lg-name-block">
                 <img src={src} alt="customer" className="widget-lg-img"></img>
                 <p className="widget-lg-name">{transaction.name}</p>
@@ -82,9 +82,9 @@ const WidgetLg = () => {
                 <Button className="widget-lg-btn" text={transaction.status} />
               </td>
             </tr>
+            ))}
           </tbody>
         </table>
-      ))}
     </div>
   );
 };

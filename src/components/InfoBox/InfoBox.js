@@ -15,7 +15,7 @@ const InfoBox = () => {
               <ArrowDownward className="arrow-down" />
             </span>
           </div>
-          <p>Compared to last week</p>
+          <p className="info-text">Compared to last week</p>
         </div>
 
         <div className="info-box">
@@ -27,7 +27,7 @@ const InfoBox = () => {
               <ArrowDownward className="arrow-down" />
             </span>
           </div>
-          <p>Compared to last week</p>
+          <p className="info-text">Compared to last week</p>
         </div>
       {/* </div> */}
 
@@ -40,7 +40,7 @@ const InfoBox = () => {
             <ArrowUpward className="arrow-up" />
           </span>
         </div>
-        <p>Compared to last week</p>
+        <p className="info-text">Compared to last week</p>
       </div>
     </div>
   );
