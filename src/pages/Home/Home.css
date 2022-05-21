@@ -5,7 +5,7 @@
 
 @media screen and (max-width: 1023px) {
   .Home {
-    padding: 1em;
-    margin: 0;
+    padding: 0 1em;
+    margin: 0 auto;
   }
 }

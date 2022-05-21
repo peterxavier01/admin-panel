@@ -87,4 +87,24 @@
   .widget-title {
     font-size: 1.2rem;
   }
+
+  .member-img {
+    margin-right: .5em;
+    padding-left: 0em;
+  }
+  
+  .name-block {
+    margin-right: 0em;
+  }
+  
+  .display-block {
+    margin-left: .5em;
+    padding: 0 0.3em;
+    margin-right: 0em;
+  } 
+  
+  .display {
+    padding-left: 0.5em;
+    font-size: 0.6rem;
+  }  
 }

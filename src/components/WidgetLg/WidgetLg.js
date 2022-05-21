@@ -60,6 +60,7 @@ const WidgetLg = () => {
   return (
     <div className="widget-lg">
       <h3 className="widget-title">Customer Transactions</h3>
+      <div className="table-responsive">
         <table className="customers">
           <thead>
             <tr>
@@ -70,21 +71,22 @@ const WidgetLg = () => {
             </tr>
           </thead>
           <tbody>
-          {transactions.map((transaction) => (
-            <tr key={transaction.id}>
-              <td className="widget-lg-name-block">
-                <img src={src} alt="customer" className="widget-lg-img"></img>
-                <p className="widget-lg-name">{transaction.name}</p>
-              </td>
-              <td className="widget-lg-date">{transaction.date}</td>
-              <td className="widget-lg-amount">{transaction.amount}</td>
-              <td>
-                <Button className="widget-lg-btn" text={transaction.status} />
-              </td>
-            </tr>
+            {transactions.map((transaction) => (
+              <tr key={transaction.id}>
+                <td className="widget-lg-name-block">
+                  <img src={src} alt="customer" className="widget-lg-img"></img>
+                  <p className="widget-lg-name">{transaction.name}</p>
+                </td>
+                <td className="widget-lg-date">{transaction.date}</td>
+                <td className="widget-lg-amount">{transaction.amount}</td>
+                <td>
+                  <Button className="widget-lg-btn" text={transaction.status} />
+                </td>
+              </tr>
             ))}
           </tbody>
         </table>
+      </div>
     </div>
   );
 };

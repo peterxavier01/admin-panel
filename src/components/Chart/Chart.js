@@ -7,24 +7,31 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
+  BarChart,
+  Bar,
 } from "recharts";
 
-const Chart = ({ title, data, dataKey, grid }) => {
+const Chart = ({ title, data, dataKey }) => {
   return (
     <div className="chart">
       <h3 className="chart-title">{title}</h3>
-      <ResponsiveContainer className="chart-container" aspect={3.5/1}>
-        <LineChart data={data}>
-          <XAxis dataKey="name" stroke="var(--blue)" strokeDasharray="10 10"/>
-          <YAxis dataKey={dataKey} stroke="var(--blue)" strokeDasharray="10 10" />
-          <Line
-            type="monotone"
-            dataKey={dataKey}
-            stroke="var(--blue)"
-          />
+      <ResponsiveContainer className="chart-container" aspect={3}>
+        <BarChart
+          className="bar-chart"
+          data={data}
+          margin={{
+            top: 2,
+            right: 5,
+            left: 10,
+            bottom: 2,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
           <Tooltip />
-          { grid && <CartesianGrid stroke="hsl(0, 1%, 81%)" strokeDasharray="5 5" /> }
-        </LineChart>
+          <Bar dataKey={dataKey} fill="var(--tertiary-clr)" />
+          <Bar dataKey={dataKey} fill="#82ca9d" />
+        </BarChart>
       </ResponsiveContainer>
     </div>
   );

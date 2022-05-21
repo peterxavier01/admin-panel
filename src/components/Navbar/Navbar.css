@@ -9,6 +9,7 @@
     top: 0;
     z-index: 100;
     right: 0;
+    padding: 0 .5em;
     left: 0;
 }
 
@@ -19,7 +20,6 @@
     text-decoration: none;
     color: var(--gray);
     font-size: 1.2rem;
-    padding-left: 1em;
 }
 
 .logo img {
@@ -67,7 +67,7 @@
     width: 40px;
     height: 40px;
     object-fit: cover;
-    margin: 0 1em;
+    margin-left: 1em;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -76,7 +76,7 @@
     .menu {
         display: block;
         color: var(--gray);
-        margin-left: 1em;
+        margin-right: 1em;
     }
 
     .nav-left {
@@ -91,4 +91,13 @@
     .logo p {
         font-size: 14px;
     }
+
+    .nav-right i {
+        margin-left: .5em;
+    }
+    
+    .profile {
+        margin-left: .5em;
+    }
+    
 }
