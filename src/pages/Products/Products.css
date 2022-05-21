@@ -45,12 +45,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .products {
-       /* outline: 1px solid red; */
-    }
-
     .card-container {
-        outline: 1px solid red;
         grid-template-columns: repeat(2, minmax(200px, 1fr));
         row-gap: 2em;
         column-gap: 2em;
