@@ -1,9 +1,6 @@
 import "./Chart.css";
 import {
-  LineChart,
-  Line,
   XAxis,
-  YAxis,
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,

@@ -32,7 +32,7 @@ const Team = () => {
   if (error) console.log(error);
 
   return (
-    <div className="users">
+    <div className="users table-responsive">
       <table>
         <thead>
           <tr>

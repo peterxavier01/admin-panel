@@ -1,59 +1,79 @@
 .users {
-    flex: 4;
-    margin: 1em;
+  flex: 4;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 0em;
 }
 
 .users table {
-    border-collapse: collapse;
-    width: 90%;
-    overflow: hidden;
-    border-radius: 1em;
-    margin-left: 3em;
+  border-collapse: collapse;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 1em;
+  margin-left: 3.5em;
 }
 
-.users th, 
+.users th,
 .users td {
-    /* border-bottom: 1px solid hsl(0, 0%, 83%); */
-    color: hsl(0, 0%, 23%);
-    padding: 1em;
+  color: hsl(0, 0%, 23%);
+  padding: 1em;
 }
 
 .users th {
-    text-align: left;
+  text-align: left;
 }
 
 .users th {
-    background-color: hsl(0, 0%, 98%);
-    color: var(--gray);
-    font-size: 1.1rem;
-    font-weight: 600;
+  background-color: hsl(0, 0%, 98%);
+  color: var(--gray);
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .users tr:hover {
-    background-color: var(--primary-clr);
+  background-color: var(--primary-clr);
 }
 
 .users img {
-    width: 40px;
-    height: 40px;
-    margin-right: .5em;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .loading {
-    display: flex;
-    margin: 1em;
-    color: var(--teriary-clr);
-    flex: 4;
+  display: flex;
+  margin: 1em;
+  color: var(--teriary-clr);
+  flex: 4;
 }
 
 .users tr {
-    border-bottom: 1px solid hsl(0, 0%, 83%);
+  border-bottom: 1px solid hsl(0, 0%, 83%);
 }
 
 .image-data {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1023px) {
+  .users {
+    margin-right: 1em;
+    padding-left: 1em;
+  }
+
+  .users table {
+    margin-left: 0em;
+  }
+
+  .users th {
+    font-size: 1rem;
+  }
+
+  .users td {
+    font-size: .9rem;
+  }
 }
