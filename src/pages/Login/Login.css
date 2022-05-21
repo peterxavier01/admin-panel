@@ -71,3 +71,10 @@ label {
   color: var(--red);
   margin-top: 1em;
 }
+
+@media screen and (max-width: 768px) {
+  #form {
+    margin: 1em;
+
+  }   
+}
