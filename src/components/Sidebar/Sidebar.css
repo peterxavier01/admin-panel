@@ -67,20 +67,15 @@ nav ul li:last-of-type {
   #sidenav {
     position: fixed;
     width: 0%;
-    height: calc(100vh + 1000px);
-    z-index: 200;
-    top: -60px;
+    height: 100%;
+    z-index: 10;
+    top: 0;
     left: 0;
     background-color: var(--primary-clr);
     overflow-x: hidden;
     transition: 0.5s !important;
   }
 
-  .side-flex {
-    height: calc(100vh + 120px);
-    padding-top: 1em;
-  }
-  
   .dashboard {
     margin-top: 2.5em;
   }

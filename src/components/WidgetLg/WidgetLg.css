@@ -79,10 +79,6 @@
         flex-direction: column;
     }
 
-    .widget-lg {
-        outline: 1px solid red;
-    }
-
     .customers th {
         font-size: 1rem;
     }
