@@ -17,3 +17,20 @@ body {
   --green: rgb(59, 223, 59);
   --tertiary-clr: hsl(190, 72%, 78%);
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+::selection{
+  background-color: var(--tertiary-clr);
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--gray);
+}

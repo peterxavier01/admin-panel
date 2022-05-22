@@ -36,17 +36,19 @@ const Products = () => {
       <div className="card-container">
         {products
           ? products?.map((product) => (
-              <div className="card" key={product.id}>
-                <img
-                  alt="product card"
-                  className="product-img"
-                  src={product.image}
-                />
-                <div className="card-body">
-                  <h3 className="card-title">{product.name}</h3>
-                  <p className="card-text">Net Price:  ${product.net_price}</p>
-                  <p className="card-text">Taxes:  {product.taxes}%</p>
-                  <p className="card-text">Price:  ${product.price}</p>
+              <div className="card-flex" key={product.id}>
+                <div className="card" >
+                  <img
+                    alt="product card"
+                    className="product-img"
+                    src={product.image}
+                  />
+                  <div className="card-body">
+                    <h3 className="card-title">{product.name}</h3>
+                    <p className="card-text">Net Price: ${product.net_price}</p>
+                    <p className="card-text">Taxes: {product.taxes}%</p>
+                    <p className="card-text">Price: ${product.price}</p>
+                  </div>
                 </div>
               </div>
             ))
