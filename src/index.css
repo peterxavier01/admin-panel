@@ -28,7 +28,8 @@ html{
 
 ::-webkit-scrollbar{
   width: 10px;
-  background-color: #f1f1f1;
+  --primary-clr: hsl(240, 100%, 97%);
+  background-color: var(--primary-clr);
 }
 
 ::-webkit-scrollbar-thumb{
