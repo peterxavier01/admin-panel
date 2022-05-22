@@ -68,7 +68,7 @@ nav ul li:last-of-type {
     position: fixed;
     width: 0%;
     height: 100%;
-    z-index: 1000;
+    z-index: 50;
     top: 0;
     left: 0;
     background-color: var(--primary-clr);

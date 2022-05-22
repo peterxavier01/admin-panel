@@ -14,7 +14,7 @@ import "./Sidebar.css";
 const Sidebar = ({ logout }) => {
   function closeNav() {
     let sidenav = document.getElementById("sidenav");
-    if (sidenav) {
+    if (sidenav && window.innerWidth < 1023 ) {
       sidenav.style.width = "0";
       sidenav.style.display = "none";
     }
@@ -28,25 +28,25 @@ const Sidebar = ({ logout }) => {
             <div className="side-up">
             <a href className="closebtn" onClick={() => closeNav()}>{<Close />}</a>
               <li className="dashboard">
-                <Link to="/dashboard" activeclassname="active">
+                <Link to="/dashboard" activeclassname="active" onClick={() => closeNav()}>
                   <i>{<Dashboard />}</i>
                   <p>Dashboard</p>
                 </Link>
               </li>
               <li>
-                <Link to="/users" activeclassname="active">
+                <Link to="/users" activeclassname="active" onClick={() => closeNav()}>
                   <i>{<PersonAdd />}</i>
                   <p>Client</p>
                 </Link>
               </li>
               <li>
-                <Link to="/team" activeclassname="active">
+                <Link to="/team" activeclassname="active" onClick={() => closeNav()}>
                   <i>{<People />}</i>
                   <p>Team</p>
                 </Link>
               </li>
               <li>
-                <Link to="/products" activeclassname="active">
+                <Link to="/products" activeclassname="active" onClick={() => closeNav()}>
                   <i>{<LocalMall />}</i>
                   <p>Products</p>
                 </Link>
