@@ -5,7 +5,6 @@ import "./InfoBox.css";
 const InfoBox = () => {
   return (
     <div className="info-container">
-      {/* <div className="info-grid"> */}
         <div className="info-box">
           <p className="info-title">Revenue</p>
           <div className="amount-container">
@@ -29,7 +28,6 @@ const InfoBox = () => {
           </div>
           <p className="info-text">Compared to last week</p>
         </div>
-      {/* </div> */}
 
       <div className="info-box">
         <p className="info-title">Cost</p>
