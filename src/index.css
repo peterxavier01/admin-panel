@@ -16,6 +16,7 @@ body {
   --blue: #23b5d3;
   --green: rgb(59, 223, 59);
   --tertiary-clr: hsl(190, 72%, 78%);
+  --black: #070600;
 }
 
 html{
