@@ -59,6 +59,27 @@
   justify-content: flex-start;
 }
 
+.users .actions {
+  display: flex;
+  align-items: center;
+}
+
+.users .actions a {
+  margin-right: 0.5em;
+  --green: hsl(120, 72%, 71%);
+  background-color: var(--green);
+  padding: .5em;
+  border-radius: 6px;
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.users .deleteIcon {
+  color: var(--red);
+  cursor: pointer;
+  font-size: 1.7rem !important;
+}
+
 @media screen and (max-width: 1023px) {
   .users {
     margin-right: 1em;

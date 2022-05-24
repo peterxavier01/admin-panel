@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Users.css";
 import axios from "axios";
+import { DeleteOutline } from "@material-ui/icons";
 
 const Users = () => {
   const [clients, setClients] = useState([]);
@@ -31,6 +33,10 @@ const Users = () => {
 
   if (error) console.log(error);
 
+  const handleDelete = (id) => {
+    setClients(clients.filter((client) => client.id !== id));
+  }
+
   return (
     <div className="users table-responsive">
       <table>
@@ -40,21 +46,27 @@ const Users = () => {
             <th>Email</th>
             <th>Phone No.</th>
             <th>Gender</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-        {clients ? clients?.map((client, index) => (
-            <tr key={index}>
-              <td className="image-data">
-                <img src={client.image} alt="team"></img>
-                  {client.name}
-              </td>
-              <td>{client.email}</td>
-              <td>{client.phone}</td>
-              <td>{client?.contact.gender}</td>
-            </tr>
-          )) : null
-          }
+          {clients
+            ? clients?.map((client, index) => (
+                <tr key={index}>
+                  <td className="image-data">
+                    <img src={client.image} alt="team"></img>
+                    {client.name}
+                  </td>
+                  <td>{client.email}</td>
+                  <td>{client.phone}</td>
+                  <td>{client?.contact.gender}</td>
+                  <td className="actions">
+                    <Link to={`/user/${client.id}`}>Edit</Link>
+                    <DeleteOutline className="deleteIcon" onClick={() => handleDelete(client.id)} />
+                  </td>
+                </tr>
+              ))
+            : null}
         </tbody>
       </table>
     </div>

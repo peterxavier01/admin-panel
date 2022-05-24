@@ -8,6 +8,8 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./pages/Home/Home";
 import Team from "./pages/Team/Team";
 import Products from "./pages/Products/Products";
+import User from "./pages/User/User";
+import AddUser from "./pages/AddUser/AddUser";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -39,6 +41,8 @@ function App() {
             <>
               <Route path="/dashboard" element={<Home />} />
               <Route path="/users" element={<Users />} />
+              <Route path="/user/:userId" element={<User />} />
+              <Route path="/add-user" element={<AddUser />} />
               <Route path="/team" element={<Team />} />
               <Route path="/products" element={<Products />} />
             </>
