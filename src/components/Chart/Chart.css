@@ -3,7 +3,7 @@
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .chart-title {
@@ -17,6 +17,10 @@
 .bar-chart {
   width: 500px;
   height: 300px;
+}
+
+.chart-container-sm {
+  display: none;
 }
 
 @media screen and (max-width: 1023px) {
@@ -38,5 +42,15 @@
 
   .bar-name {
     font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chart-container-sm {
+    display: block;
+  }
+
+  .chart-container {
+    display: none;
   }
 }

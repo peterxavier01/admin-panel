@@ -30,6 +30,24 @@ const Chart = ({ title, data, dataKey }) => {
           <Bar dataKey={dataKey} fill="#82ca9d" />
         </BarChart>
       </ResponsiveContainer>
+      <ResponsiveContainer className="chart-container-sm" aspect={1.8}>
+        <BarChart
+          className="bar-chart"
+          data={data}
+          margin={{
+            top: 2,
+            right: 5,
+            left: 10,
+            bottom: 2,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <Tooltip />
+          <Bar dataKey={dataKey} fill="var(--tertiary-clr)" />
+          <Bar dataKey={dataKey} fill="#82ca9d" />
+        </BarChart>
+      </ResponsiveContainer>
     </div>
   );
 };
