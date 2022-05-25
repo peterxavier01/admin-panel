@@ -25,16 +25,16 @@ const Navbar = () => {
         </a>
       </div>
       <div className="nav-right">
-        <Tooltip disableFocusListener title="Notifications" arrow interactive>
+        <Tooltip disableFocusListener title="Notifications" arrow>
           <div className="icon-container badge-container">
             <i>{<Notifications />}</i>
             <span className="badge">10</span>
           </div>
         </Tooltip>
-        <Tooltip disableFocusListener title="Profile" arrow>
-          <div className="icon-container">
-            <i>{<Person />}</i>
-          </div>
+        <Tooltip disableFocusListener title="Notifications" arrow>
+        <div className="icon-container">
+          <i>{<Person />}</i>
+        </div>
         </Tooltip>
         <img src={Profile} alt="profile" className="profile" />
       </div>
