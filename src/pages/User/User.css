@@ -73,6 +73,8 @@
   font-size: 0.8rem;
   font-weight: 300;
   color: var(--gray);
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
 }
 
 .user-details-position {
@@ -81,11 +83,6 @@
 
 .user-profile-bottom p {
   margin-bottom: 1em;
-}
-
-.user-profile-title {
-  margin-top: 1em !important;
-  margin-bottom: 1em !important;
 }
 
 .user-profile-container {
@@ -179,7 +176,7 @@
 .user-update-btn button {
   background-color: var(--blue);
   color: var(--white);
-  padding: .8em 1em;
+  padding: 0.8em 1em;
   font-size: 1rem;
   width: 100px;
   cursor: pointer;
@@ -188,24 +185,67 @@
   outline: none;
 }
 
-@media screen and (max-width: 1023px) {
-    .user-container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+@media screen and (max-width: 768px) {
+  .user-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .user-update {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 1em;
-    }
+  .user-update {
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+    margin-top: 1em;
+  }
 
-    .user-update-right {
-        margin-left: .5em;
-    }
+  .user-update-right {
+    margin-left: 0.5em;
+  }
 
-    .user-nav-btn {
-        padding-right: 1em;
-    }
+  .user-nav-btn {
+    padding-right: 1em;
+  }
+
+  .user-nav h1 {
+    font-size: 1.2rem;
+  }
+
+  .user-nav-btn {
+    padding: 0.8em 1em;
+    font-size: 0.8rem;
+  }
+
+  .user-display {
+    padding: 0.5em;
+  }
+
+  .user-update-left h3 {
+    font-size: 1.2rem;
+  }
+
+  .user-update-img-container {
+    margin-top: 1em;
+  }
+
+  .user-update-img-container img {
+    margin-bottom: 2em;
+  }
+
+  .user-update-btn button {
+    font-size: 0.8rem;
+    width: 100px;
+  }
+
+  .user-profile-details p {
+    font-size: 0.9rem;
+  }
+
+  .user-profile-container p {
+    font-size: 0.9rem;
+  }
+
+  .user-profile-title {
+    font-size: 0.78rem;
+  }
 }
