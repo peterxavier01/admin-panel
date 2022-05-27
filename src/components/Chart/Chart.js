@@ -8,11 +8,11 @@ import {
   Bar,
 } from "recharts";
 
-const Chart = ({ title, data, dataKey }) => {
+const Chart = ({ title, data, dataKey, aspect }) => {
   return (
     <div className="chart">
       <h3 className="chart-title">{title}</h3>
-      <ResponsiveContainer className="chart-container" aspect={3}>
+      <ResponsiveContainer className="chart-container" aspect={aspect}>
         <BarChart
           className="bar-chart"
           data={data}

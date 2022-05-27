@@ -6,10 +6,14 @@ import Users from "./pages/Users/Users";
 import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./pages/Home/Home";
-import Team from "./pages/Team/Team";
+import Teams from "./pages/Teams/Teams";
 import Products from "./pages/Products/Products";
 import User from "./pages/User/User";
 import AddUser from "./pages/AddUser/AddUser";
+import Product from "./pages/Product/Product";
+import AddProduct from "./pages/AddProduct/AddProduct";
+import Team from "./pages/Team/Team";
+import AddTeam from "./pages/AddTeam/AddTeam";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -43,8 +47,12 @@ function App() {
               <Route path="/users" element={<Users />} />
               <Route path="/user/:userId" element={<User />} />
               <Route path="/add-user" element={<AddUser />} />
-              <Route path="/team" element={<Team />} />
+              <Route path="/teams" element={<Teams />} />
+              <Route path="/team/:teamId" element={<Team />} />
+              <Route path="/add-team" element={<AddTeam />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/product/:productId" element={<Product />} />
+              <Route path="/add-product" element={<AddProduct />} />
             </>
           )}
           <Route

@@ -40,7 +40,7 @@ const Sidebar = ({ logout }) => {
                 </Link>
               </li>
               <li>
-                <Link to="/team" activeclassname="active" onClick={() => closeNav()}>
+                <Link to="/teams" activeclassname="active" onClick={() => closeNav()}>
                   <i>{<People />}</i>
                   <p>Team</p>
                 </Link>

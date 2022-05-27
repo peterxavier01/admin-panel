@@ -9,15 +9,17 @@ import {
   PhoneIphone,
   Publish,
 } from "@material-ui/icons";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const User = () => {
+  const params = useParams();
+
   return (
     <div className="user">
       <div className="user-nav">
-        <h1 className="user-nav-title">Edit User</h1>
+        <h1 className="user-nav-title">Edit User: {params.userId}</h1>
         <Link to="/add-user">
-        <button className="user-nav-btn">Create</button>
+          <button className="user-nav-btn">Create</button>
         </Link>
       </div>
       <div className="user-container">
@@ -59,7 +61,7 @@ const User = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> 
         <div className="user-update">
           <div className="user-update-left">
             <h3>Edit</h3>

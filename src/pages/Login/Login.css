@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #279af1, #23B5D3);
+  background: linear-gradient(to right, #279af1, #23b5d3);
   width: 100vw;
   flex: 4;
   min-height: 100vh;
@@ -41,7 +41,7 @@ label {
 }
 
 .submit {
-  background: linear-gradient(to right, #279af1, #23B5D3);
+  background: linear-gradient(to right, #279af1, #23b5d3);
   border: 2px solid;
   border-radius: 6px;
   padding: 1em;
@@ -75,6 +75,22 @@ label {
 @media screen and (max-width: 768px) {
   #form {
     margin: 1em;
+  }
 
-  }   
+  .email,
+  .password {
+    font-size: 0.8rem;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  .submit {
+    font-size: 1rem;
+  }
 }

@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import "./Users.css";
+import "./Teams.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import { DeleteOutline } from "@material-ui/icons";
 
-const Users = () => {
-  const [clients, setClients] = useState([]);
+const Teams = () => {
+  const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const url = "https://fakerapi.it/api/v1/companies?_quantity=10";
+    const url = "https://fakerapi.it/api/v1/persons?_quantity=10";
 
     const fetchData = async () => {
       try {
         setLoading(true);
         const response = await axios.get(url);
         const content = response.data.data;
-        setClients(content);
+        setTeams(content);
       } catch (error) {
         setError(error);
         console.log("error", error);
@@ -29,12 +29,12 @@ const Users = () => {
     fetchData();
   }, []);
 
-  if (loading) return <h1 className="loading">Fetching clients' list...</h1>;
+  if (loading) return <h1 className="loading">Fetching employees' list...</h1>;
 
   if (error) console.log(error);
 
   const handleDelete = (id) => {
-    setClients(clients.filter((client) => client.id !== id));
+    setTeams(teams.filter((team) => team.id !== id));
   }
 
   return (
@@ -42,7 +42,7 @@ const Users = () => {
       <table>
         <thead>
           <tr>
-            <th>Client Name</th>
+            <th>Member Name</th>
             <th>Email</th>
             <th>Phone No.</th>
             <th>Gender</th>
@@ -50,21 +50,24 @@ const Users = () => {
           </tr>
         </thead>
         <tbody>
-          {clients
-            ? clients?.map((client, index) => (
+          {teams
+            ? teams?.map((team, index) => (
                 <tr key={index}>
                   <td className="image-data">
-                    <img src={client.image} alt="team"></img>
-                    {client.name}
+                    <img src={team.image} alt="team"></img>
+                    {team.firstname} {team.lastname}
                   </td>
-                  <td>{client.email}</td>
-                  <td>{client.phone}</td>
-                  <td>{client?.contact.gender}</td>
+                  <td>{team.email}</td>
+                  <td>{team.phone}</td>
+                  <td>{team.gender}</td>
                   <td className="actions">
-                    <Link to={`/user/${client.id}`}>Edit</Link>
-                    <DeleteOutline className="deleteIcon" onClick={() => handleDelete(client.id)} />
+                    <Link to={`/team/${team.id}`}>Edit</Link>
+                    <DeleteOutline
+                      className="deleteIcon"
+                      onClick={() => handleDelete(team.id)}
+                    />
                   </td>
-                </tr> 
+                </tr>
               ))
             : null}
         </tbody>
@@ -73,4 +76,4 @@ const Users = () => {
   );
 };
 
-export default Users;
+export default Teams;

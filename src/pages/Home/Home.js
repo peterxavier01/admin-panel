@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="Home">
       <InfoBox />
-      <Chart data={userData} title="User Analytics" dataKey="Active User"/>
+      <Chart data={userData} title="User Analytics" dataKey="Active User" aspect={4}/>
       <div className="widget-block">
         <WidgetSm className="widget-sm"/>
         <WidgetLg className="widget-lg"/>
