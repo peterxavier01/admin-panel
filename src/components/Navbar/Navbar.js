@@ -31,7 +31,7 @@ const Navbar = () => {
             <span className="badge">10</span>
           </div>
         </Tooltip>
-        <Tooltip disableFocusListener title="Notifications" arrow>
+        <Tooltip disableFocusListener title="Profile" arrow>
         <div className="icon-container">
           <i>{<Person />}</i>
         </div>
