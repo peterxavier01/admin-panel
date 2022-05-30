@@ -8,7 +8,7 @@ import { Publish } from "@material-ui/icons";
 const Product = () => {
   const params = useParams();
   return (
-    <div className="product">
+    <div className="product"> 
       <div className="user-nav">
         <h1 className="user-nav-title">Product Id: {params.productId}</h1>
         <Link to="/add-product">

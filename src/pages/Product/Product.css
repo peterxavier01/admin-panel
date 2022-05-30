@@ -171,11 +171,17 @@
   }
 
   .product-input-container {
-    width: 350px;
+    width: 280px;
   }
 
   .product-bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-input-container {
+    width: 260px;
   }
 }
